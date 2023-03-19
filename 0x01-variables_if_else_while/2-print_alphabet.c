@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - main function
+ *
+ * Return: always 0
+ */
+
+int main(void)
 {
-	char ch = 'a';
+	char i;
 
-	printf("Lowercase Alphabets: \n");
-	while (ch <= 'z')
-	{
-		printf("%c ", ch);
-		ch++;
-	}
-	printf("\n");
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar(i);
+	putchar('\n');
 
-	return 0;
+	return (0);
 }
